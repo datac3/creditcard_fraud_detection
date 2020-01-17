@@ -1,0 +1,118 @@
+# Data Analysis; Logistic Regression Model used to Predict the Probability of Default of Credit Card Customers
+===
+***
+
+### This is an example analysis of creating a binomial logistic regression model to predict the probability of default of credit card customers.  The data was obtained from the [**University of California, Irvine (UCI) Machine Learning Repository**](https://archive.ics.uci.edu/ml/datasets/default+of+credit+card+clients) and the example was based on the paper by [I-Cheng Yeh and Che-hui Lien](https://www.semanticscholar.org/paper/The-comparisons-of-data-mining-techniques-for-the-Yeh-Lien/1cacac4f0ea9fdff3cd88c151c94115a9fddcf33/pdf).
+
+### In this data set, "y" is the class or dependant variable.
+
+df = rcloud.home('RCloud_Sample_Notebooks/default of credit card clients.csv', user='jf589f')
+
+fn = read.csv(df, header=TRUE, sep=",", skip=0)
+head(fn)
+summary(fn)
+Definition of the logistic function $\sigma(x)$.
+$$
+\sigma(x) = \frac{1}{1+e^{-x}}
+$$
+
+x = -8:8
+y = 1/(1 + exp(-x))
+plot(x,y,type="n",main="Logistic Function")
+lines(x,y)
+x = -8:8
+y = 1/(1 + exp(-x))
+plot(x,y,type="n",main="Logistic Function")
+lines(x,y)
+
+If $x$ is a linear function then the argument to the logistic function can be written as a linear system.
+
+$$
+F(x) = 1/(1 + exp(-Ax))
+$$
+
+ $F(x)$ can be interpretted as the probability of the independent variable $x$ producing an output of 1 given the design matrix $A$.
+ 
+When training a binomial logistic regression model we are interested in the inverse problem.  That is, given a set of examples what is the optimal value of $A$.
+
+$$
+g(F(x)) = ln(\frac{F(x)}{1-F(x)}) = Ax
+$$
+$$
+\frac{F(x)}{1-F(x)} = e^{Ax}
+$$
+x = -8:8x = -8:8
+y = 1/(1 + exp(-x))
+plot(x,y,type="n",main="Logistic Function")
+lines(x,y)
+
+y = 1/(1 + exp(-x))
+plot(x,y,type="n",main="Logistic Function")
+lines(x,y)
+  
+Note that the $g$, called the *logit* function, is equivalent to simple linear regression and
+is also the log odds of F(x).
+ 
+ x = -8:8
+y = 1/(1 + exp(-x))
+plot(x,y,type="n",main="Logistic Function")
+lines(x,y)
+
+If $x$ is a linear function then the argument to the logistic function can be written as a linear system.
+
+$$
+F(x) = 1/(1 + exp(-Ax))
+$$
+
+ $F(x)$ can be interpretted as the probability of the independent variable $x$ producing an output of 1 given the design matrix $A$.
+ 
+When training a binomial logistic regression model we are interested in the inverse problem.  That is, given a set of examples what is the optimal value of $A$.
+
+$$
+g(F(x)) = ln(\frac{F(x)}{1-F(x)}) = Ax
+$$
+$$
+\frac{F(x)}{1-F(x)} = e^{Ax}
+$$
+
+Note that the $g$, called the *logit* function, is equivalent to simple linear regression and
+is also the log odds of F(x).
+ If $x$ is a linear function then the argument to the logistic function can be written as a linear system.
+
+$$
+F(x) = 1/(1 + exp(-Ax))
+$$
+
+ $F(x)$ can be interpretted as the probability of the independent variable $x$ producing an output of 1 given the design matrix $A$.
+ 
+When training a binomial logistic regression model we are interested in the inverse problem.  That is, given a set of examples what is the optimal value of $A$.
+
+$$
+g(F(x)) = ln(\frac{F(x)}{1-F(x)}) = Ax
+$$
+$$
+\frac{F(x)}{1-F(x)} = e^{Ax}
+$$
+
+Note that the $g$, called the *logit* function, is equivalent to simple linear regression and
+is also the log odds of F(x).
+ If $x$ is a linear function then the argument to the logistic function can be written as a linear system.
+
+$$
+F(x) = 1/(1 + exp(-Ax))
+$$
+
+ $F(x)$ can be interpretted as the probability of the independent variable $x$ producing an output of 1 given the design matrix $A$.
+ 
+When training a binomial logistic regression model we are interested in the inverse problem.  That is, given a set of examples what is the optimal value of $A$.
+
+$$
+g(F(x)) = ln(\frac{F(x)}{1-F(x)}) = Ax
+$$
+$$
+\frac{F(x)}{1-F(x)} = e^{Ax}
+$$
+
+Note that the $g$, called the *logit* function, is equivalent to simple linear regression and
+is also the log odds of F(x).
+ 
